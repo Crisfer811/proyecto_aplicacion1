@@ -1,0 +1,11 @@
+Funcion inscribir_estudiante (curso, estudiante):
+  Si el estudiante en curso.estudiantes:
+      Lanzar advertencia(Estudiante ya agregado)
+  Si no:
+    Agregar al estudiante a curso.estudiantes
+    Imprimir "Estudiante inscrito correctamente"
+
+Funcion crear_evaluacion(curso, titulo, tipo):
+  nueva_evaluacion = evaluacion(titulo, tipo)
+  Agregar nueva_evaluacion a curso.evaluaciones
+  imprimir "Evaluacion Creada Exitosamente"
