@@ -5,3 +5,11 @@ class Evaluacion:
     self.ponderacion = ponderacion 
     self.calificacion = {}
 
+  def registrar_calificacion(self, estudiante, nota, comentarios):
+    try:
+      if 0 <= nota <=100:
+        self.calificacion[estudiante.id_usuario] = {
+          "nota": nota,
+          "comentario": comentarios
+        }else:
+        raise ValueError
