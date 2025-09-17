@@ -5,7 +5,33 @@ Funcion inscribir_estudiante (curso, estudiante):
     Agregar al estudiante a curso.estudiantes
     Imprimir "Estudiante inscrito correctamente"
 
+
+
 Funcion crear_evaluacion(curso, titulo, tipo):
   nueva_evaluacion = evaluacion(titulo, tipo)
   Agregar nueva_evaluacion a curso.evaluaciones
   imprimir "Evaluacion Creada Exitosamente"
+
+
+
+Funcion Registrar_Calificacion(evaluacion, estudiante, nota):
+  Si el estudiante no tiene nota en Evaluacion,nota:
+    Evaluacion.notas[Estudiante] = nota
+    Imprimir "Nota Registrada"
+  Si no:
+     lanzar advertencia("Ya existe una nota en ese estudiante")
+
+
+
+Funcion Reporte_Promedios_Bajos(cursoss, limite):
+  Para cada estudiante en el urso.estudiantes:
+    Total = 0
+    Cantidad = 0
+    Para cada evaluacion en curso.evaluaciones:
+      Si el estudiante en evaluacion.notas:
+        Total += evaluacion.notas[Estudiantes]
+        Cantidad += 1
+    Si cantidad > 0:
+      cantidad = Total / Cantidad
+      Si promedio < Limite:
+        Imprimir estudiante.nombre, "Tiene un promedio bajo: " Promedio 
