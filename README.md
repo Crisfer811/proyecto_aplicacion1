@@ -15,14 +15,14 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
   - puede crear avaluaciones
   - puede asignar notas
     + EJEMPLO
-       profe = Instructor("Carlos Pérez", "I001", "carlos@uni.edu")
-       curso1 = profe.crear_curso("CS101", "Programación Avanzada")
-       examen1 = profe.crear_evaluacion(curso1, "Parcial 1", "examen")
+       profe = Instructor("Cristopher Lopez", "C01", "crislo@uni.edu.gt")
+       curso1 = profe.crear_curso("C101", "Estructura de Datos")
+       examen1 = profe.crear_evaluacion(curso1, "Parcial 1", "Examen Parcial")
  * Estudiante
    - Puede inscribirse a un curso
    - puede consultar sus notas
      + EJEMPLO
-       est1 = Estudiante("Ana López", "E001", "ana@uni.edu")
+       est1 = Estudiante("Danna Espino ", "EST001", "danne@est.edu")
        est1.inscribir(curso1)
 
   5. FUNCIONES PRINCIPALES
