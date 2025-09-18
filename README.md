@@ -43,9 +43,29 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
       - Muestra aquellos que estan por debajo de un limite definido
      
   6. EJEMPLO DE FLUJO
+    # Crear Maestro y curso
+     profe = Instructor("Cristopher Lopez", "C01", "crislo@uni.edu.gt")
+     curso1 = profe.crear_curso("C101", "Estructura de Datos")
+     
+     # Crear estudiantes e inscribirlos
+     est1 = Estudiante("Danna Espino ", "EST001", "danne@est.edu")
+     est2 = Estudiante("Hanna Espino", "EST002", "hanna@est.edu")
+     est1.inscribir(curso1)
+     est2.inscribir(curso1)
+     
+     # Crear evaluación y asignar notas
+     examen1 = profe.crear_evaluacion(curso1, "Parcial 1", "Examen Parcial")
+     examen1.asignar_nota(est1, 60)
+     examen1.asignar_nota(est2, 45)
+     
+     # Generar reporte de estudiantes con promedio menor a 50
+     reporte_promedios_bajos(curso1, 50)
 
+     Hanna Espino tiene promedio bajo: 40.00
       
-      
-  8. MANEJO DE ERRORES
+  7. MANEJO DE ERRORES
+     Inscripción duplicada → “El estudiante ya está inscrito en este curso”.
+     Nota duplicada → “Ya existe una nota para este estudiante”.
+     Instructor no imparte curso → Error al crear evaluación.
 
    
