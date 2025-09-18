@@ -42,8 +42,9 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
       - El sistema calcula el promedio de cada estudiante
       - Muestra aquellos que estan por debajo de un limite definido
      
-  7. EJEMPLO DE FLUJO
+  6. EJEMPLO DE FLUJO
 
+      
       
   8. MANEJO DE ERRORES
 
