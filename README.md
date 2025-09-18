@@ -12,10 +12,10 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
   4. ROLES DEL USUARIO
 * Instructor
   - Puede crear cursos
-  - puede crear avaluaciones
-  - puede asignar notas
+  - Puede crear avaluaciones
+  - Puede asignar notas
     + EJEMPLO
-       profe = Instructor("Cristopher Lopez", "C01", "crislo@uni.edu.gt")
+       profe = Instructor("Carlos Batres", "C01", "carbat@uni.edu.gt")
        curso1 = profe.crear_curso("C101", "Estructura de Datos")
        examen1 = profe.crear_evaluacion(curso1, "Parcial 1", "Examen Parcial")
  * Estudiante
@@ -44,7 +44,7 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
      
   6. EJEMPLO DE FLUJO
     # Crear Maestro y curso
-     profe = Instructor("Cristopher Lopez", "C01", "crislo@uni.edu.gt")
+     profe = Instructor("Carlos Batres", "C01", "carbat@uni.edu.gt")
      curso1 = profe.crear_curso("C101", "Estructura de Datos")
      
      # Crear estudiantes e inscribirlos
