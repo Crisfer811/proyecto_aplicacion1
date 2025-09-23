@@ -1,16 +1,19 @@
 class Evaluacion:
-  def __init__(self, nombre, tipo, ponderacion = 1.0):
-    self.nombre = nombre 
-    self.tipo = tipo
-    self.ponderacion = ponderacion 
-    self.calificacion = {}
+    def __init__(self, titulo, tipo, ponderacion):
+        self.titulo = titulo
+        self.tipo = tipo
+        self.ponderacion = ponderacion
+        self.notas = {}
 
-  def registrar_calificacion(self, estudiante, nota, comentarios):
-    try:
-      if 0 <= nota <=100:
-        self.calificacion[estudiante.id_usuario] = {
-          "nota": nota,
-          "comentario": comentarios
-        }else:
-        raise ValueError
+    def asignar_nota(self, estudiante, nota):
+        if estudiante not in self.notas:
+            self.notas[estudiante] = nota
+            estudiante.notas[self] = nota
+        else:
+            raise Exception("Nota ya registrada")
 
+    def obtener_promedio(self):
+        if len(self.notas) == 0:
+            return 0
+        return sum(self.notas.values()) / len(self.notas)
+    
