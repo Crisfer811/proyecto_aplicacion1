@@ -6,7 +6,7 @@ Este sistema permite gestionar cursos online, inscribir a estudiantes, crear eva
 - Consola, puede ser VS Code o PyCharm
   
   3. INICIAR EL PROGRAMA
-- Abrir el archivo (Plataforma.py) en Python
+- Abrir el archivo (Main.py) en Python
 - Ejecutar el programa
     
   4. ROLES DEL USUARIO
