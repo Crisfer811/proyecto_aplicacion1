@@ -43,3 +43,6 @@ class Instructor(Usuario):
             return evaluacion
         else:
             raise Exception("El instructor no imparte este curso")
+
+
+
